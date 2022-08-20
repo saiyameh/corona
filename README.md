@@ -1,6 +1,6 @@
 # Covid Tracker
 A website using JavaScript to visualize Covid-19 Data
-![Image Source](https://user-images.githubusercontent.com/89779009/185761860-ac86034f-0d1d-4e9d-a1be-8d5a6af76dd7.png)
+<p align="left"><img src="https://user-images.githubusercontent.com/89779009/185762064-65ef0afd-cf8a-4c5c-90cc-0623a7e15a7d.png"></p>
 
 ## License
 CC0 1.0 Universal
