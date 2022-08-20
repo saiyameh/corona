@@ -20,7 +20,7 @@
     <div id="container"></div>
     <script>
         anychart.onDocumentReady(function () {
-          anychart.data.loadJsonFile('https://gist.githubusercontent.com/shacheeswadia/3bbe6eb041166e259f1712e6766fa5a2/raw/341d2796dd63e6e6defc1ec52dd4e73c7828c38c/sunburstDataUpdated.json',
+          anychart.data.loadJsonFile('/coviddata.json',
             function (data) {
     
               // create a data tree from the dataset
@@ -46,14 +46,14 @@
                 .level(1)
                 .labels()
                 .fontFamily("Verdana, sans-serif")
-                .format("<span style='font-size:16px'>{%name}</span>");
+                .format("<span style='font-size:25px'>{%name}</span>");
     
               chart
                 .level(0)
                 .labels()
                 .fontFamily("Verdana, sans-serif")
                 .fontWeight(500)
-                .format("<span style='font-size:16px'>TOTAL CASES</span><br><br><span style='font-size:16px'>{%value}{groupsSeparator:\\,}</span>");
+                .format("<span style='font-size:25px'>TOTAL CASES</span><br><br><span style='font-size:20px'>{%value}{groupsSeparator:\\,}</span>");
     
               // enable HTML in tooltips
               chart.tooltip().useHtml(true);
@@ -62,7 +62,7 @@
               chart
                 .tooltip()
                 .fontFamily("Verdana, sans-serif")
-                .format("<h5 style='font-size:14px; margin: 0.25rem 0;'>{%name}</h5><h6 style='font-size:14px; font-weight:400; margin: 0.2rem 0;'>Total Cases: <b>{%value}{groupsSeparator:\\,}</b></h6><h6 style='font-size:14px; font-weight:400; margin: 0.2rem 0;'>Total Deaths: <b>{%total_deaths}{groupsSeparator:\\,}</b></h6>");
+                .format("<h5 style='font-size:14px; margin: 0.25rem 0;'>{%name}</h5><h6 style='font-size:14px; font-weight:400; margin: 0.2rem 0;'>Total Cases : <b>{%value}{groupsSeparator:\\,}</b></h6><h6 style='font-size:14px; font-weight:400; margin: 0.2rem 0;'>Total Deaths : <b>{%total_deaths}{groupsSeparator:\\,}</b></h6>");
     
               // configure the chart stroke
               chart.normal().stroke("#fff", 0.2);
